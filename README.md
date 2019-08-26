@@ -1,2 +1,3 @@
-# iot-django
-iot django graphql server submodule
+# IOT-Django
+
+This is a submodule of iot project.

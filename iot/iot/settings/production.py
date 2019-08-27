@@ -12,7 +12,7 @@ DATABASES = {
         'NAME': 'iot',
         'USER': 'postgres',
         'PASSWORD': os.getenv('POSTGRESQL_PASSWORD'),
-        'HOST': 'postgresql',
+        'HOST': 'timescaledb',
         'PORT': '5432',
     }
 }

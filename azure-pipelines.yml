@@ -10,6 +10,8 @@ resources:
   containers:
   - container: timescaledb
     image: timescale/timescaledb:latest-pg11
+    ports:
+    - 5432:5432
     env:
       POSTGRES_PASSWORD: postgres
 
@@ -57,7 +59,6 @@ steps:
 
 - script: |
     pushd '$(projectRoot)'
-    export TEST_SERVER=true
     python manage.py test --testrunner xmlrunner.extra.djangotestrunner.XMLTestRunner --no-input
   displayName: 'Run tests'
 

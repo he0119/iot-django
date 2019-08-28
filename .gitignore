@@ -63,9 +63,3 @@ target/
 
 # Ipython Notebook
 .ipynb_checkpoints
-
-# VSCode
-.vscode
-
-# Database
-*.sqlite3

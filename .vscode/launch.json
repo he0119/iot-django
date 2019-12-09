@@ -14,7 +14,8 @@
         "test",
         "--no-input"
       ],
-      "django": true
+      "django": true,
+      "console": "integratedTerminal",
     },
     {
       "name": "Django",
@@ -25,7 +26,8 @@
         "runserver",
         "--noreload"
       ],
-      "django": true
+      "django": true,
+      "console": "integratedTerminal",
     }
   ]
 }

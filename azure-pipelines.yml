@@ -8,8 +8,8 @@ trigger:
 
 resources:
   containers:
-  - container: timescaledb
-    image: timescale/timescaledb:latest-pg11
+  - container: postgres
+    image: postgres:12.1-alpine
     ports:
     - 5432:5432
     env:
@@ -19,7 +19,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 services:
-  timescaledb: timescaledb
+  postgres: postgres
 
 strategy:
   matrix:
@@ -27,6 +27,8 @@ strategy:
       PYTHON_VERSION: '3.6'
     Python37:
       PYTHON_VERSION: '3.7'
+    Python38:
+      PYTHON_VERSION: '3.8'
   maxParallel: 2
 
 steps:

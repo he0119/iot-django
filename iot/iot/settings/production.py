@@ -10,9 +10,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'iot',
-        'USER': 'postgres',
+        'USER': os.getenv('POSTGRES_USER'),
         'PASSWORD': os.getenv('POSTGRESQL_PASSWORD'),
-        'HOST': 'timescaledb',
+        'HOST': 'postgres',
         'PORT': '5432',
     }
 }

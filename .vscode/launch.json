@@ -8,8 +8,8 @@
       "name": "Django Test",
       "type": "python",
       "request": "launch",
-      "program": "${workspaceFolder}\\iot\\manage.py",
-      "cwd": "${workspaceFolder}\\iot",
+      "program": "${workspaceFolder}/iot/manage.py",
+      "cwd": "${workspaceFolder}/iot",
       "args": [
         "test",
         "--no-input"
@@ -21,7 +21,7 @@
       "name": "Django",
       "type": "python",
       "request": "launch",
-      "program": "${workspaceFolder}\\iot\\manage.py",
+      "program": "${workspaceFolder}/iot/manage.py",
       "args": [
         "runserver",
         "--noreload"
